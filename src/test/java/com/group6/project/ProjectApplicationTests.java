@@ -1,10 +1,10 @@
-package com.group6.PlayerDataService;
+package com.group6.project;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PlayerDataServiceApplicationTests {
+class ProjectApplicationTests {
 
 	@Test
 	void contextLoads() {

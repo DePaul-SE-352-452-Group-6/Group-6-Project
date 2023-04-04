@@ -1,13 +1,13 @@
-package com.group6.PlayerDataService;
+package com.group6.project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PlayerDataServiceApplication {
+public class ProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PlayerDataServiceApplication.class, args);
+		SpringApplication.run(ProjectApplication.class, args);
 	}
 
 }
