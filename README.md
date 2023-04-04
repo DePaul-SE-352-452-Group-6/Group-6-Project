@@ -34,6 +34,7 @@ Our schedules are listed on [When2Meet](https://www.when2meet.com/?19400023-628g
 
 ## Meeting Journal
 | # | Date | Summary |
+| ----------- | ----------- | ---
 | 1 | 4/2/23 | Review Milestone 1 submission and walk through sourcecontrol software and repository
 
 ## Apendix
