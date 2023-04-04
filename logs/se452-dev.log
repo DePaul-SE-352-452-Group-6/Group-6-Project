@@ -1,0 +1,19 @@
+2023-04-03 19:43:10,689 INFO  [restartedMain] com.group6.project.ProjectApplication : Starting ProjectApplication using Java 19.0.2 with PID 8780 (D:\School\OOE\Project\build\classes\java\main started by ADMIN in D:\School\OOE\Project)
+2023-04-03 19:43:10,690 DEBUG [restartedMain] com.group6.project.ProjectApplication : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-04-03 19:43:10,691 INFO  [restartedMain] com.group6.project.ProjectApplication : The following 1 profile is active: "dev"
+2023-04-03 19:43:12,763 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2023-04-03 19:43:12,763 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-03 19:43:12,844 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2023-04-03 19:43:13,067 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-04-03 19:43:13,527 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-04-03 19:43:13,530 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-04-03 19:43:13,603 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 19:43:13,760 INFO  [restartedMain] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-03 19:43:14,835 INFO  [restartedMain] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-03 19:43:15,753 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 19:43:16,723 INFO  [restartedMain] com.group6.project.ProjectApplication : Started ProjectApplication in 6.536 seconds (process running for 7.094)
+2023-04-03 19:43:16,727 DEBUG [restartedMain] com.group6.project.ProjectApplication : Debug
+2023-04-03 19:43:16,728 INFO  [restartedMain] com.group6.project.ProjectApplication : Info
+2023-04-03 19:43:16,728 WARN  [restartedMain] com.group6.project.ProjectApplication : Warning
+2023-04-03 19:43:16,728 ERROR [restartedMain] com.group6.project.ProjectApplication : Error
+2023-04-03 19:43:17,110 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 2

@@ -8,7 +8,7 @@ logging:
   level:
     root: INFO
     org.springframework: ERROR
-    edu.depaul.cdm.se452: DEBUG
+    com.group6: DEBUG
 
 spring:
   jpa:

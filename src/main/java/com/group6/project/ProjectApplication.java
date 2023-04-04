@@ -1,5 +1,6 @@
 package com.group6.project;
 
+import com.group6.project.concepts.relational.basic.CourseRepository;
 import org.springframework.boot.SpringApplication;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -7,6 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+
 
 import lombok.extern.log4j.Log4j2;
 
@@ -32,11 +34,11 @@ public class ProjectApplication {
 		};
 	}
 
-	/*@Bean
+	@Bean
 	public CommandLineRunner showCourseList(CourseRepository repo) {
 		return (args) -> {
 			log.info("Num " + repo.count());
 		};
-	}*/
+	}
 
 }
