@@ -1,6 +1,7 @@
 package com.group6.project;
 
 import com.group6.project.concepts.relational.basic.CourseRepository;
+import com.group6.project.relational.account.AccountRepository;
 import org.springframework.boot.SpringApplication;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -35,7 +36,7 @@ public class ProjectApplication {
 	}
 
 	@Bean
-	public CommandLineRunner showCourseList(CourseRepository repo) {
+	public CommandLineRunner showCourseList(AccountRepository repo) {
 		return (args) -> {
 			log.info("Num " + repo.count());
 		};
