@@ -36,6 +36,14 @@ Our schedules are listed on [When2Meet](https://www.when2meet.com/?19400023-628g
 | # | Date | Summary |
 | ----------- | ----------- | ---
 | 1 | 4/2/23 | Review Milestone 1 submission and walk through sourcecontrol software and repository
+| 2 | 4/16/23 | Review Milestone 2 requirements and submission
+
+<br>
+## Milestone 2: Add SQL Persistence
+Cameron added Account and Account Currency relational data as well as associated unit tests
 
 ## Apendix
-![Milestone 1 Screenshot](/img/milestone-1.png?raw=true "Optional Title")
+![Milestone 1 Screenshot](/img/milestone-1.png?raw=true "Milestone 1")
+![Milestone 2 Screenshot](/img/milestone-2-account-working-code.png?raw=true "Milestone 2 Working Code")
+
+

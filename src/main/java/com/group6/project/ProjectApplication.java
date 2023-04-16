@@ -1,6 +1,7 @@
 package com.group6.project;
 
 import com.group6.project.concepts.relational.basic.CourseRepository;
+import com.group6.project.relational.account.AccountCurrencyRepository;
 import com.group6.project.relational.account.AccountRepository;
 import org.springframework.boot.SpringApplication;
 
@@ -36,7 +37,14 @@ public class ProjectApplication {
 	}
 
 	@Bean
-	public CommandLineRunner showCourseList(AccountRepository repo) {
+	public CommandLineRunner showAccountList(AccountRepository repo) {
+		return (args) -> {
+			log.info("Num " + repo.count());
+		};
+	}
+
+	@Bean
+	public CommandLineRunner showAccountCurrencyList(AccountCurrencyRepository repo) {
 		return (args) -> {
 			log.info("Num " + repo.count());
 		};
