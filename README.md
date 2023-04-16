@@ -2,6 +2,7 @@
 This is group 6 project for [DePaul SE452](http://www.cdm.depaul.edu/academics/pages/courseinfo.aspx?Subject=SE&CatalogNbr=452) which serves as a backend service for video game development similar to [PlayFab](https://playfab.com/).
 <br>
 * Milestone 1: Define the project and base structure and areas where each members will be working on
+* Milestone 2: Add SQL Persistence, Cameron added Account and Account Currency relational data as well as associated unit tests
 
 ## Project Members
 
@@ -38,9 +39,6 @@ Our schedules are listed on [When2Meet](https://www.when2meet.com/?19400023-628g
 | 1 | 4/2/23 | Review Milestone 1 submission and walk through sourcecontrol software and repository
 | 2 | 4/16/23 | Review Milestone 2 requirements and submission
 
-<br>
-## Milestone 2: Add SQL Persistence
-Cameron added Account and Account Currency relational data as well as associated unit tests
 
 ## Apendix
 ![Milestone 1 Screenshot](/img/milestone-1.png?raw=true "Milestone 1")
