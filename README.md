@@ -2,7 +2,7 @@
 This is group 6 project for [DePaul SE452](http://www.cdm.depaul.edu/academics/pages/courseinfo.aspx?Subject=SE&CatalogNbr=452) which serves as a backend service for video game development similar to [PlayFab](https://playfab.com/).
 <br>
 * Milestone 1: Define the project and base structure and areas where each members will be working on
-* Milestone 2: Add SQL Persistence, Cameron added Account and Account Currency relational data as well as associated unit tests
+* Milestone 2: Add SQL Persistence, Cameron added Account and Account Currency relational data as well as associated unit tests. Zhihong added Currencies, Digital Good data and Account Inventory relational data as well as associated unit tests.
 
 ## Project Members
 
