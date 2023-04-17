@@ -30,7 +30,7 @@ public class AccountCurrencyTest {
 
         assertEquals(b4Add + 1, afterAdd);
 
-        var foundAccount = accountCurrencyRepository.findByAccountID(1);
+        var foundAccount = accountCurrencyRepository. findByAccountID(1);
         assertEquals(1, foundAccount.size());
     }
 }
