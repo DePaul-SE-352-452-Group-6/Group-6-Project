@@ -1,11 +1,12 @@
 /**
- * Base Account Data for users
- * Managed by Cameron Cintron
+ * Base digital goods and currencies information
+ * Managed by Zhihong HE
  *
- * Added nullable and unique elements to generatedvalue on columns
  * not discussed in class
  *
- * SELECT * FROM ACCOUNT_CURRENCY as ac,ACCOUNT as a where a.id = ac.account_id to join account to accountcurrency
+ * SELECT *  FROM account_inventory, Account
+ * WHERE account_inventory.account_id = Account.id
+ * In order to better understand the detailed ownership of digital products for each account
  *
  * <ol>
  * <li>build.gradle that define JPA and
