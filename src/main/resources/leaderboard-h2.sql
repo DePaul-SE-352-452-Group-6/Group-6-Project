@@ -1,0 +1,1 @@
+SELECT account_id, amount FROM account_currency ORDER BY amount DESC
