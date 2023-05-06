@@ -1,5 +1,6 @@
 package com.group6.project.relational.account;
 
+import com.group6.project.relational.digitalassets.Currencies;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,10 +19,15 @@ public class AccountCurrencyTest {
     @DisplayName("Test Adding Account Currency")
     @Test
     public void testAddingAccountComposition() {
+
+        Currencies currencies = new Currencies();
+        currencies.setId(1);
+        currencies.setInitialCount(500);
+        currencies.setName("Gold");
+
         AccountCurrency accountCurrency = new AccountCurrency();
-        accountCurrency.setId(23);
-        accountCurrency.setAccountID(1);
-        accountCurrency.setCurrencyID(1);
+        accountCurrency.setID(23);
+        accountCurrency.setCurrencyID(currencies);
         accountCurrency.setAmount(500);
 
         var b4Add = accountCurrencyRepository.count();

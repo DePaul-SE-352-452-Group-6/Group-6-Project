@@ -17,7 +17,7 @@ public class AccountTest {
     @Test
     public void testAccount(){
         Account account = new Account();
-        account.setId(23);
+        account.setID(23);
         account.setUserName("Larry");
         account.setPassword("David");
 
@@ -32,7 +32,7 @@ public class AccountTest {
     @Test
     public void testAddingAccountComposition() {
         Account account = new Account();
-        account.setId(23);
+        account.setID(23);
         account.setUserName("Larry");
         account.setPassword("David");
         account.setSignupDate(new Date(1681664605149L));

@@ -1,7 +1,10 @@
 package com.group6.project.relational.account;
 
 import java.sql.Date;
+import java.util.List;
 
+import com.group6.project.relational.digitalassets.AccountInventory;
+import com.group6.project.relational.digitalassets.DigitalGoods;
 import jakarta.persistence.*;
 
 import lombok.Data;
@@ -16,7 +19,7 @@ import lombok.Data;
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long ID;
 
     @Column(name = "user_name",nullable = false,unique = true)
     private String userName;
@@ -50,4 +53,12 @@ public class Account {
 
     @Column(name = "last_seen_date",nullable = false)
     private Date lastSeenDate;
+
+    @OneToMany
+    //@JoinColumn(name = "currency_id")
+    private List<AccountCurrency> currencies;
+
+    @OneToMany
+    //@JoinColumn(name = "account_inventory_id")
+    private List<AccountInventory> inventory;
 }
