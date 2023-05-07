@@ -1,3 +1,12 @@
+app:
+  doc:
+    version: 2023-Spring
+    title: SE352-452 Concept API3
+    description: This is a documentation for the video game account service.
+    terms-of-service: http://swagger.io/terms/
+    license:  Apache 2.0
+    url: http://springdoc.org
+
 spring:
   profiles:
     active: dev
