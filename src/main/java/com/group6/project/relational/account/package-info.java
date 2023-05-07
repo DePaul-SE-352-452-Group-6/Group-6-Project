@@ -12,6 +12,8 @@
  * <li>Added a OneToMany relationship from Account to AccountInventory
  * <li>Added a Account Service
  * <li>Added a AccountCurrency Service
+ * <li>Added a Account Service Swagger Documentation
+ * <li>Added AccountCurrency Service Swagger Documentation
  * <li>Integrated swagger into project
  * <li>Added nullable and unique elements to generatedvalue on columns not discussed in class
  * </ol>
