@@ -10,6 +10,9 @@
  * <li>Added a OneToOne relationship from AccountCurrency to Currencies
  * <li>Added a OneToMany relationship from Account to AccountCurrency
  * <li>Added a OneToMany relationship from Account to AccountInventory
+ * <li>Added a Account Service
+ * <li>Added a AccountCurrency Service
+ * <li>Integrated swagger into project
  * <li>Added nullable and unique elements to generatedvalue on columns not discussed in class
  * </ol>
  * @see Account for user account data
