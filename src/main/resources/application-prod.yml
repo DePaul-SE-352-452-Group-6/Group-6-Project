@@ -13,3 +13,6 @@ logging:
 spring:
   datasource:
     url: jdbc:h2:mem:se452prod
+  sql:
+    init:
+      platform: h2
