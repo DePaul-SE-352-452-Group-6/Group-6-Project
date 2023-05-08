@@ -23,7 +23,7 @@ public class AccountTest {
         account.setUserName("Larry");
         account.setPassword("David");
 
-        String expectedNoError = "Account(id=23, userName=Larry, password=David, facebookID=null, appleID=null, googleID=null, ipAddress=null, country=null, state=null, city=null, signupDate=null, lastSeenDate=null)";
+        String expectedNoError = "Account(ID=23, userName=Larry, password=David, facebookID=null, appleID=null, googleID=null, ipAddress=null, country=null, state=null, city=null, signupDate=null, lastSeenDate=null, currencies=null, inventory=null)";
         assertEquals(expectedNoError, account.toString());
     }
 

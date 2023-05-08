@@ -20,7 +20,7 @@ public class DigitalGoodsTest {
     public void testAddingAccountComposition() {
         DigitalGoods digitalGoods = new DigitalGoods();
         digitalGoods.setId(100);
-        digitalGoods.setName("weapon");
+        digitalGoods.setName("level 2");
         digitalGoods.setCosts(500);
         digitalGoods.setCurrencyId(1);
 

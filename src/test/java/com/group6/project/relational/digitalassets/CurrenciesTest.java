@@ -20,8 +20,8 @@ public class CurrenciesTest {
     @Test
     public void testAddingAccountComposition() {
         Currencies currency = new Currencies();
-        currency.setId(100);
-        currency.setName("Gems");
+        //currency.setId(100);
+        currency.setName("Sapphires");
         currency.setInitialCount(500);
 
         var beforeAdd = currenciesRepository.count();
