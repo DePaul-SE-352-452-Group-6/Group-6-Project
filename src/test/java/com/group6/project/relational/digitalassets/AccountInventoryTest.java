@@ -14,8 +14,8 @@ import java.sql.Date;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@DataJpaTest
-@ActiveProfiles("test")
+//@DataJpaTest
+//@ActiveProfiles("test")
 @SpringBootTest
 public class AccountInventoryTest {
     @Autowired

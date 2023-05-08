@@ -10,8 +10,8 @@ import org.junit.jupiter.api.DisplayName;
 import java.sql.Date;
 
 
-@DataJpaTest
-@ActiveProfiles("test")
+//@DataJpaTest
+//@ActiveProfiles("test")
 @SpringBootTest
 public class AccountTest {
 

@@ -8,8 +8,8 @@ import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@DataJpaTest
-@ActiveProfiles("test")
+//@DataJpaTest
+//@ActiveProfiles("test")
 @SpringBootTest
 public class DigitalGoodsTest {
     @Autowired
