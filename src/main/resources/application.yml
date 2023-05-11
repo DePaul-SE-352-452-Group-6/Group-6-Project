@@ -7,6 +7,11 @@ app:
     license:  Apache 2.0
     url: http://springdoc.org
 
+springdoc:
+  version: '@springdoc.version@'
+  swagger-ui:
+    use-root-path: true
+
 spring:
   profiles:
     active: dev
