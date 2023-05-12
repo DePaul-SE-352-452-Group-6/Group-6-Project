@@ -6,9 +6,10 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "digital_goods")
-public class DigitalGoods {
+public class DigitalGood {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "digital_good_id")
     private long id;
 
     //digital goods' name such as aroma, weapon and so on

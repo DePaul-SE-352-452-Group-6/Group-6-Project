@@ -12,15 +12,19 @@ import lombok.ToString;
 public class AccountInventory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "inventory_id")
     private long id;
 
-    //@Column(name = "account_id",nullable = false)
+    //one account can have multiple inventories
+    //such as account_number 1, that guy can have weapon(digital_good_id=1), shoes(digital_good_id=2) and so on
     @ManyToOne(fetch = FetchType.EAGER)
     @ToString.Exclude
+    @JoinColumn(name = "account_id")
     private Account account;
 
-    @Column(name = "digital_good_id",nullable = false)
-    private Integer digitalGoodID;
+    @ManyToOne
+    @JoinColumn(name = "digital_good_id")
+    private DigitalGood digitalGoodID;
 
     @Column(name = "amount",nullable = false)
     private Integer amount;

@@ -2,9 +2,7 @@ package com.group6.project.relational.digitalassets;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -18,7 +16,7 @@ public class DigitalGoodsTest {
     @DisplayName("Test Adding Digital Goods")
     @Test
     public void testAddingAccountComposition() {
-        DigitalGoods digitalGoods = new DigitalGoods();
+        DigitalGood digitalGoods = new DigitalGood();
         digitalGoods.setId(100);
         digitalGoods.setName("level 2");
         digitalGoods.setCosts(500);
