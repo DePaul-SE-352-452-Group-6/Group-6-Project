@@ -3,8 +3,8 @@ package com.group6.project.relational.account;
 import java.sql.Date;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.group6.project.relational.digitalassets.AccountInventory;
-import com.group6.project.relational.digitalassets.DigitalGoods;
 import jakarta.persistence.*;
 
 import lombok.Data;
@@ -19,6 +19,7 @@ import lombok.Data;
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "account_id")
     private long ID;
 
     @Column(name = "user_name",nullable = false,unique = true)
@@ -54,11 +55,16 @@ public class Account {
     @Column(name = "last_seen_date",nullable = false)
     private Date lastSeenDate;
 
+    //avoid infinite loop in json
+    //instead, if you want to use "GET" command to get the entities on swagger
+    //you will get an error
+    @JsonIgnore
     @OneToMany
-    //@JoinColumn(name = "currency_id")
+    @JoinColumn(name = "currency_id")
     private List<AccountCurrency> currencies;
 
+    @JsonIgnore
     @OneToMany
-    //@JoinColumn(name = "account_inventory_id")
+    @JoinColumn(name = "account_inventory_id")
     private List<AccountInventory> inventory;
 }

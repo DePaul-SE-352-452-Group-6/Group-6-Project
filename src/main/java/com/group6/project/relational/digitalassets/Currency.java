@@ -6,9 +6,10 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "currency")
-public class Currencies {
+public class Currency {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "currency_id")
     private long id;
 
     //the currency name such as gold, coin and so on

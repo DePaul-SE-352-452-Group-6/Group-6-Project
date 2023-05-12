@@ -1,12 +1,10 @@
 package com.group6.project.relational.account;
 
-import com.group6.project.relational.digitalassets.Currencies;
+import com.group6.project.relational.digitalassets.Currency;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -22,7 +20,7 @@ public class AccountCurrencyTest {
     @Test
     public void testAddingAccountComposition() {
 
-        Currencies currencies = new Currencies();
+        Currency currencies = new Currency();
         currencies.setId(1);
         currencies.setInitialCount(500);
         currencies.setName("Gold");
