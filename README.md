@@ -3,6 +3,7 @@ This is group 6 project for [DePaul SE452](http://www.cdm.depaul.edu/academics/p
 <br>
 * Milestone 1: Define the project and base structure and areas where each members will be working on
 * Milestone 2: Add SQL Persistence, Cameron added Account and Account Currency relational data as well as associated unit tests. Zhihong added Currencies, Digital Good data and Account Inventory relational data as well as associated unit tests.
+* Milestone 3: Add Docker,Documentation, Build Actions, Cameron and Zhi worked on Swagger, Docker, and CRUD service layer for our respective packages.
 
 ## Project Members
 
@@ -38,7 +39,7 @@ Our schedules are listed on [When2Meet](https://www.when2meet.com/?19400023-628g
 | ----------- | ----------- | ---
 | 1 | 4/2/23 | Review Milestone 1 submission and walk through sourcecontrol software and repository
 | 2 | 4/16/23 | Review Milestone 2 requirements and submission
-
+| 3 | 5/11/23 | Review Docker Stuff to get it working
 
 ## Apendix
 ![Milestone 1 Screenshot](/img/milestone-1.png?raw=true "Milestone 1")
@@ -46,6 +47,7 @@ Our schedules are listed on [When2Meet](https://www.when2meet.com/?19400023-628g
 ![Milestone 2 Screenshot](/img/milestone-2-account-database.png?raw=true "Milestone 2 Working Account Data")
 ![Milestone 3 Screenshot](/img/milestone-3-account-service.png?raw=true "Milestone 3 Working Account Service Layer and Documentation")
 ![Milestone 3 Screenshot](/img/milestone-3-ci-cd.png?raw=true "Milestone 3 Working CI/CD")
+![Milestone 3 Screenshot](/img/milestone-3-docker.png?raw=true "Milestone 3 Working Docker Upload")
 ![image1](https://user-images.githubusercontent.com/129224800/232379484-9a3e8617-4ed3-42a3-bf19-8901096a57cc.png)
 ![image2](https://user-images.githubusercontent.com/129224800/232379638-cf8f361d-8205-4dbc-98b8-df54d50be8bb.png)
 ![image](https://user-images.githubusercontent.com/129224800/232624999-791405cc-7954-441a-a5fd-a9caeb24f867.png)
