@@ -5,6 +5,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface DigitalGoodsRepository extends JpaRepository<DigitalGood, Long> {
+
+    public DigitalGood findById(long id);
     public DigitalGood findByName(String name);
 
     //If you want to find which digital goods can be purchased through specific currency types,

@@ -80,9 +80,9 @@ public class CurrenciesService {
         return ResponseEntity.ok("new currency's name is " + currency.getName());
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     @Operation(summary = "Delete the currency")
-    public void delete(long id) {
+    public void delete(@PathVariable("id") Long id) {
         log.traceEntry("Enter delete", id);
         repo.deleteById(id);
         log.traceExit("Exit delete");

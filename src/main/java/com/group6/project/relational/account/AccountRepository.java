@@ -11,7 +11,7 @@ import java.util.List;
  */
 public interface AccountRepository extends JpaRepository<Account, Long> {
 
-
+    public Account findById(long id);
     public Account findByUserName(String userName);
 
     public Account findByFacebookID(Integer id);

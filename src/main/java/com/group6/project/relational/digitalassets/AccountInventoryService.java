@@ -1,5 +1,7 @@
 package com.group6.project.relational.digitalassets;
 
+import com.group6.project.relational.account.AccountRepository;
+import com.group6.project.relational.account.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -23,6 +25,10 @@ import java.util.Map;
 public class AccountInventoryService {
     @Autowired
     private AccountInventoryRepository repo;
+    @Autowired
+    private AccountRepository accountRepo;
+    @Autowired
+    private DigitalGoodsRepository digitalRepo;
 
     @GetMapping
     @Operation(summary = "Returns all the account inventory in the database")
@@ -38,35 +44,51 @@ public class AccountInventoryService {
     @GetMapping("/{id}")
     public AccountInventory get(@PathVariable("id") Long AccountInventoryId) {
         log.traceEntry("get", AccountInventoryId);
-        AccountInventory accountInventory = repo.findById(AccountInventoryId).orElse(new AccountInventory());
+        AccountInventory accountInventory = repo.findById(AccountInventoryId).orElse(null);
         log.traceExit("get", AccountInventoryId);
         return accountInventory;
     }
 
+    /*
+    this method can only achieve put method, if you want to insert a new info into it,
+    you will get a null pointer exception
+
     @PutMapping
-    public void update(AccountInventory accountInventory) {
-        log.traceEntry("update", accountInventory);
+    public void update(AccountInventoryRequest accountInventoryRequest) {
+        log.traceEntry("update", accountInventoryRequest);
 
         // find the digital good from database
-        var repoAccountInventory = get(accountInventory.getId());
+        var repoAccountInventory = get(accountInventoryRequest.getId());
+        long accountId = accountInventoryRequest.getAccountId();
+        long digitalGoodID = accountInventoryRequest.getDigitalGoodID();
+        Account account = accountRepo.findById(accountId);
+        DigitalGood digitalGood = digitalRepo.findById(digitalGoodID);
 
         // update the values for digital good in database to value that was passed
-        repoAccountInventory.setAccount(accountInventory.getAccount());
-        repoAccountInventory.setDigitalGoodID(accountInventory.getDigitalGoodID());
-        repoAccountInventory.setAmount(accountInventory.getAmount());
+        repoAccountInventory.setAccount(account);
+        repoAccountInventory.setDigitalGood(digitalGood);
+        repoAccountInventory.setAmount(accountInventoryRequest.getAmount());
 
         // save the updated value
         repo.save(repoAccountInventory);
-        log.traceExit("update", accountInventory);
+        log.traceExit("update", repoAccountInventory);
     }
+     */
 
-    @PostMapping
-    @Operation(summary = "Save the account inventory and returns the account inventory id")
-    public long save(AccountInventory accountInventory) {
-        log.traceEntry("enter save", accountInventory);
+    //actually, post and get methods exert the same function here, so I just need to put them together
+    @RequestMapping(value = "/update", method = {RequestMethod.POST, RequestMethod.PUT})
+    @Operation(summary = "PUT or POST the account inventory and returns the account inventory id")
+    public long save(AccountInventoryRequest accountInventoryRequest) {
+        log.traceEntry("enter save", accountInventoryRequest);
+        long accountId = accountInventoryRequest.getAccountId();
+        long digitalGoodID = accountInventoryRequest.getDigitalGoodID();
+        Account account = accountRepo.findById(accountId);
+        DigitalGood digitalGood = digitalRepo.findById(digitalGoodID);
+        AccountInventory accountInventory = new AccountInventory(accountInventoryRequest.getId(),
+                account, digitalGood, accountInventoryRequest.getAmount());
         repo.save(accountInventory);
         log.traceExit("exit save", accountInventory);
-        return accountInventory.getId();
+        return accountInventory.getID();
     }
 
     @DeleteMapping

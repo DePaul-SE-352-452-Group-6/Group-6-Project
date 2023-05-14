@@ -19,40 +19,36 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //@ActiveProfiles("test")
 @SpringBootTest
 public class AccountInventoryTest {
-    @Autowired
-    private AccountInventoryRepository accountInventoryRepository;
+
+    /**
+     * bug fixed
+     */
 
     @Autowired
-    private AccountRepository accountRepository;
+    private AccountInventoryRepository accountInventoryRepository;
 
     @DisplayName("Test Adding Account Inventory")
     @Test
     public void testAddingAccountInventoryComposition() {
 
-        //TODO: this one doesn't work
-
-       /* Account account = new Account();
-        //account.setID(23);
-        account.setUserName("Larry");
-        account.setPassword("David");
-        account.setSignupDate(new Date(1681664605149L));
-        account.setLastSeenDate(new Date(1681664605149L));
-
-        account = accountRepository.save(account);
+        DigitalGood digitalGood = new DigitalGood();
+        digitalGood.setId(3);
+        digitalGood.setName("shoe");
+        digitalGood.setCurrencyId(1);
+        digitalGood.setCosts(100);
 
         AccountInventory accountInventory = new AccountInventory();
-        //accountInventory.setId(100);
-        accountInventory.setAccount(account);
-        accountInventory.setDigitalGoodID(1);
-        accountInventory.setAmount(3);
+        accountInventory.setID(5);
+        accountInventory.setDigitalGood(digitalGood);
+        accountInventory.setAmount(1);
 
         var beforeAdd = accountInventoryRepository.count();
         accountInventoryRepository.save(accountInventory);
         var afterAdd = accountInventoryRepository.count();
 
-        assertEquals(beforeAdd + 1, afterAdd);*/
+        assertEquals(beforeAdd + 1, afterAdd);
 
-        //var foundAccount = accountInventoryRepository.findByAccountID(2);
-        //assertEquals(2, foundAccount.size());
+        var foundAccount = accountInventoryRepository.findByAccountID(1);
+        assertEquals(1, foundAccount.size());
     }
 }

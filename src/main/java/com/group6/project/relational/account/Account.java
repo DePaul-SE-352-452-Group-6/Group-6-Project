@@ -65,6 +65,6 @@ public class Account {
 
     @JsonIgnore
     @OneToMany
-    @JoinColumn(name = "account_inventory_id")
+    @JoinColumn(name = "digital_good_id")
     private List<AccountInventory> inventory;
 }

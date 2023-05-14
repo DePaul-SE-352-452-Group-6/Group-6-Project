@@ -22,7 +22,7 @@ public class AccountCurrency {
     private Account account;
 
     //@Column(name = "currency_id",nullable = false)
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "currency_id")
     private Currency currencyID;
 

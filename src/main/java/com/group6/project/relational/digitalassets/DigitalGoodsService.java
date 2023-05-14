@@ -82,9 +82,9 @@ public class DigitalGoodsService {
         return ResponseEntity.ok("new digital good's name is " + digitalGood.getName());
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     @Operation(summary = "Delete the digital good")
-    public void delete(long id) {
+    public void delete(@PathVariable("id") Long id) {
         log.traceEntry("Enter delete", id);
         repo.deleteById(id);
         log.traceExit("Exit delete");
