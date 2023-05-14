@@ -34,8 +34,12 @@
  * @see Currency for user currency data including what they are and initial count when they create an account
  * @see DigitalGood for user digital goods data including what they are and the price and what type of currency used to purchase
  * @see CurrenciesTest for Currencies unit tests
+ * @see CurrenciesServiceTest for CurrenciesService unit tests
  * @see DigitalGoodsTest for DigitalGoods unit tests
+ * @see DigitalGoodsServiceTest for DigitalGoodsService unit tests
  * @see AccountInventoryTest for AccountInventory unit test
+ * @see AccountInventoryServiceTest for AccountInventoryService unit test
+ * @see AccountInventoryRequest for helping the RESTFUL operation
  * @see application-dev.yml for logging details
  * @see application-prod.yml for alternate database details
  * @see <a href="https://spring.io/guides/gs/accessing-data-jpa/">Quick Start</a>
