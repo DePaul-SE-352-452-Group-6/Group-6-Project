@@ -5943,3 +5943,831 @@ insert into account_inventory(inventory_id,account_id, digital_good_id, amount) 
 2023-05-11 22:31:08,943 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
 2023-05-11 22:31:08,944 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
 2023-05-11 22:31:08,947 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 12:51:55,566 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Starting DigitalGoodsServiceTest using Java 17.0.2 with PID 1540 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 12:51:55,593 DEBUG [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 12:51:55,594 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : The following 1 profile is active: "dev"
+2023-05-14 12:51:58,996 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 12:51:59,370 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 12:51:59,374 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 12:51:59,503 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 12:51:59,604 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 12:52:00,264 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 12:52:02,189 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 12:52:09,561 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Started DigitalGoodsServiceTest in 14.811 seconds (process running for 17.79)
+2023-05-14 12:52:09,679 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 12:52:09,680 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 12:52:09,686 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 12:52:09,687 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 12:52:10,481 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 12:52:10,488 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 12:52:12,113 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 12:52:12,141 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 12:52:12,142 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 12:52:12,160 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 12:52:12,160 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 12:52:12,162 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 12:52:12,189 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 13:04:53,915 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 10076 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 13:04:53,931 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 13:04:53,937 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 13:04:59,899 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 13:05:00,688 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 13:05:00,691 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 13:05:00,930 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 13:05:01,146 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 13:05:02,271 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 13:05:04,850 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 13:05:11,613 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 18.616 seconds (process running for 21.775)
+2023-05-14 13:05:11,736 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 13:05:11,738 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 13:05:11,738 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 13:05:11,739 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 13:05:12,593 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 13:05:12,598 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 13:05:13,871 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 13:05:13,882 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:05:13,883 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:05:13,886 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:05:13,886 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:05:13,887 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 13:05:13,915 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 13:16:35,978 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 4104 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 13:16:35,985 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 13:16:35,988 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 13:16:44,399 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 13:16:45,049 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 13:16:45,055 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 13:16:45,234 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 13:16:45,426 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 13:16:46,223 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 13:16:47,959 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 13:16:53,609 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 18.423 seconds (process running for 20.822)
+2023-05-14 13:16:53,714 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 13:16:53,726 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 13:16:53,729 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 13:16:53,729 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 13:16:54,350 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 13:16:54,360 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 13:16:55,202 WARN  [Test worker] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 23502, SQLState: 23502
+2023-05-14 13:16:55,203 ERROR [Test worker] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : NULL not allowed for column "AMOUNT"; SQL statement:
+insert into account_inventory (account_inventory_id, account_id, amount, digital_good_id) values (default, ?, ?, ?) [23502-214]
+2023-05-14 13:16:55,562 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 13:16:55,672 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 13:16:55,677 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 13:20:40,035 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 6784 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 13:20:40,038 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 13:20:40,039 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 13:20:43,411 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 13:20:43,778 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 13:20:43,781 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 13:20:43,898 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 13:20:44,028 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 13:20:44,748 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 13:20:46,544 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 13:20:52,148 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 12.681 seconds (process running for 15.108)
+2023-05-14 13:20:52,233 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 13:20:52,235 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 13:20:52,247 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 13:20:52,253 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 13:20:52,804 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 13:20:52,812 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 13:20:53,578 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 13:20:53,593 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:20:53,598 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:20:53,603 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:20:53,604 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:20:53,606 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 13:20:53,674 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 13:22:36,939 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 4896 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 13:22:36,947 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 13:22:36,954 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 13:22:41,075 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 13:22:41,522 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 13:22:41,525 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 13:22:41,656 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 13:22:41,845 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 13:22:42,622 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 13:22:44,315 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 13:22:50,334 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 14.422 seconds (process running for 17.135)
+2023-05-14 13:22:50,478 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 13:22:50,480 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 13:22:50,482 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 13:22:50,483 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 13:22:51,021 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 13:22:51,032 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 13:22:51,788 WARN  [Test worker] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 23502, SQLState: 23502
+2023-05-14 13:22:51,792 ERROR [Test worker] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : NULL not allowed for column "AMOUNT"; SQL statement:
+insert into account_inventory (account_inventory_id, account_id, amount, digital_good_id) values (default, ?, ?, ?) [23502-214]
+2023-05-14 13:22:52,106 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 13:22:52,111 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:22:52,113 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:22:52,114 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:22:52,114 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:22:52,115 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 13:22:52,134 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 13:27:12,551 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 616 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 13:27:12,554 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 13:27:12,556 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 13:27:15,839 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 13:27:16,247 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 13:27:16,250 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 13:27:16,348 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 13:27:16,515 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 13:27:17,128 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 13:27:18,838 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 13:27:24,324 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 12.4 seconds (process running for 14.675)
+2023-05-14 13:27:24,398 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 13:27:24,400 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 13:27:24,401 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 13:27:24,401 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 13:27:24,962 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 13:27:24,968 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 13:27:25,637 WARN  [Test worker] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 23502, SQLState: 23502
+2023-05-14 13:27:25,638 ERROR [Test worker] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : NULL not allowed for column "AMOUNT"; SQL statement:
+insert into account_inventory (account_inventory_id, account_id, amount, digital_good_id) values (default, ?, ?, ?) [23502-214]
+2023-05-14 13:27:25,903 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 13:27:25,906 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:27:25,906 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:27:25,907 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:27:25,908 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:27:25,930 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 13:27:25,939 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 13:28:32,664 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 1672 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 13:28:32,671 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 13:28:32,674 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 13:28:36,542 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 13:28:36,971 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 13:28:36,974 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 13:28:37,066 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 13:28:37,186 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 13:28:37,995 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 13:28:39,901 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 13:28:46,401 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 14.505 seconds (process running for 17.408)
+2023-05-14 13:28:46,496 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 13:28:46,499 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 13:28:46,502 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 13:28:46,504 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 13:28:47,057 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 13:28:47,064 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 13:28:47,997 WARN  [Test worker] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 23502, SQLState: 23502
+2023-05-14 13:28:47,998 ERROR [Test worker] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : NULL not allowed for column "AMOUNT"; SQL statement:
+insert into account_inventory (account_inventory_id, account_id, amount, digital_good_id) values (default, ?, ?, ?) [23502-214]
+2023-05-14 13:28:48,271 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 13:28:48,277 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:28:48,281 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:28:48,281 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:28:48,282 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:28:48,283 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 13:28:48,303 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 13:32:58,954 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 8276 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 13:32:58,960 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 13:32:58,962 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 13:33:01,575 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 13:33:01,894 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 13:33:01,897 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 13:33:01,966 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 13:33:02,058 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 13:33:02,543 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 13:33:04,015 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 13:33:08,078 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 9.667 seconds (process running for 11.515)
+2023-05-14 13:33:08,136 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 13:33:08,137 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 13:33:08,139 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 13:33:08,141 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 13:33:08,584 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 13:33:08,588 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 13:33:08,965 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 13:33:08,970 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:33:08,971 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:33:08,972 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 13:33:08,973 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 13:33:08,974 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 13:33:08,977 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 13:42:44,738 INFO  [restartedMain] com.group6.project.ProjectApplication : Starting ProjectApplication using Java 17.0.2 with PID 4700 (E:\Workspace\Group-6-Project\build\classes\java\main started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 13:42:44,743 DEBUG [restartedMain] com.group6.project.ProjectApplication : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 13:42:44,747 INFO  [restartedMain] com.group6.project.ProjectApplication : The following 1 profile is active: "dev"
+2023-05-14 13:42:48,308 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2023-05-14 13:42:48,309 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-14 13:42:48,435 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2023-05-14 13:42:48,924 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 13:42:49,227 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 13:42:49,230 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 13:42:49,298 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 13:42:49,396 INFO  [restartedMain] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 13:42:49,956 INFO  [restartedMain] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 13:42:51,465 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 13:42:54,790 INFO  [restartedMain] com.group6.project.ProjectApplication : Started ProjectApplication in 10.792 seconds (process running for 11.667)
+2023-05-14 13:42:54,854 DEBUG [restartedMain] com.group6.project.ProjectApplication : Debug
+2023-05-14 13:42:54,855 INFO  [restartedMain] com.group6.project.ProjectApplication : Info
+2023-05-14 13:42:54,856 WARN  [restartedMain] com.group6.project.ProjectApplication : Warning
+2023-05-14 13:42:54,856 ERROR [restartedMain] com.group6.project.ProjectApplication : Error
+2023-05-14 13:42:55,258 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 3
+2023-05-14 13:42:55,263 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 4
+2023-05-14 16:36:53,333 INFO  [restartedMain] com.group6.project.ProjectApplication : Starting ProjectApplication using Java 17.0.2 with PID 1904 (E:\Workspace\Group-6-Project\build\classes\java\main started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 16:36:53,360 DEBUG [restartedMain] com.group6.project.ProjectApplication : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 16:36:53,367 INFO  [restartedMain] com.group6.project.ProjectApplication : The following 1 profile is active: "dev"
+2023-05-14 16:37:00,720 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2023-05-14 16:37:00,721 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-14 16:37:00,910 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2023-05-14 16:37:01,720 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 16:37:02,510 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 16:37:02,514 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 16:37:02,739 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 16:37:03,011 INFO  [restartedMain] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 16:37:04,343 INFO  [restartedMain] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 16:37:06,590 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 16:37:13,001 INFO  [restartedMain] com.group6.project.ProjectApplication : Started ProjectApplication in 21.096 seconds (process running for 23.713)
+2023-05-14 16:37:13,111 DEBUG [restartedMain] com.group6.project.ProjectApplication : Debug
+2023-05-14 16:37:13,113 INFO  [restartedMain] com.group6.project.ProjectApplication : Info
+2023-05-14 16:37:13,114 WARN  [restartedMain] com.group6.project.ProjectApplication : Warning
+2023-05-14 16:37:13,115 ERROR [restartedMain] com.group6.project.ProjectApplication : Error
+2023-05-14 16:37:13,799 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 3
+2023-05-14 16:37:13,804 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 4
+2023-05-14 16:37:25,399 INFO  [http-nio-8080-exec-6] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-14 16:37:35,720 INFO  [http-nio-8080-exec-3] org.springdoc.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 2162 ms
+2023-05-14 16:46:17,146 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 13324 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 16:46:17,150 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 16:46:17,159 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 16:46:21,122 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 16:46:21,564 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 16:46:21,570 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 16:46:21,714 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 16:46:21,824 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 16:46:22,437 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 16:46:24,010 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 16:46:30,203 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 14.183 seconds (process running for 17.752)
+2023-05-14 16:46:30,294 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 16:46:30,300 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 16:46:30,304 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 16:46:30,305 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 16:46:30,881 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 16:46:30,887 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 16:46:31,857 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 16:46:31,864 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 16:46:31,865 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 16:46:31,870 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 16:46:31,871 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 16:46:31,872 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 16:46:31,879 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 16:48:54,257 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 13776 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 16:48:54,258 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 16:48:54,260 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 16:48:57,926 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 16:48:58,410 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 16:48:58,417 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 16:48:58,533 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 16:48:58,728 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 16:48:59,489 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 16:49:01,109 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 16:49:07,171 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 13.613 seconds (process running for 17.421)
+2023-05-14 16:49:07,269 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 16:49:07,270 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 16:49:07,271 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 16:49:07,271 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 16:49:07,895 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 16:49:07,909 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 16:49:08,947 WARN  [Test worker] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 23502, SQLState: 23502
+2023-05-14 16:49:08,948 ERROR [Test worker] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : NULL not allowed for column "AMOUNT"; SQL statement:
+insert into account_inventory (account_inventory_id, account_id, amount, digital_good_id) values (default, ?, ?, ?) [23502-214]
+2023-05-14 16:49:09,339 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 16:49:09,345 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 16:49:09,347 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 16:49:09,348 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 16:49:09,349 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 16:49:09,408 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 16:49:09,431 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 16:52:15,239 INFO  [Thread-6] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2023-05-14 16:52:15,242 INFO  [Thread-6] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-14 16:52:15,331 INFO  [Thread-6] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 16:52:15,565 INFO  [Thread-6] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 16:52:15,569 INFO  [Thread-6] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 16:52:15,861 INFO  [restartedMain] com.group6.project.ProjectApplication : Starting ProjectApplication using Java 17.0.2 with PID 1904 (E:\Workspace\Group-6-Project\build\classes\java\main started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 16:52:15,862 DEBUG [restartedMain] com.group6.project.ProjectApplication : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 16:52:15,864 INFO  [restartedMain] com.group6.project.ProjectApplication : The following 1 profile is active: "dev"
+2023-05-14 16:52:18,732 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2023-05-14 16:52:18,737 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-14 16:52:18,815 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2023-05-14 16:52:19,258 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Starting...
+2023-05-14 16:52:19,265 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 16:52:19,269 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Start completed.
+2023-05-14 16:52:19,280 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 16:52:19,472 INFO  [restartedMain] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 16:52:20,694 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 16:52:24,164 INFO  [restartedMain] com.group6.project.ProjectApplication : Started ProjectApplication in 8.471 seconds (process running for 934.875)
+2023-05-14 16:52:24,183 DEBUG [restartedMain] com.group6.project.ProjectApplication : Debug
+2023-05-14 16:52:24,184 INFO  [restartedMain] com.group6.project.ProjectApplication : Info
+2023-05-14 16:52:24,184 WARN  [restartedMain] com.group6.project.ProjectApplication : Warning
+2023-05-14 16:52:24,185 ERROR [restartedMain] com.group6.project.ProjectApplication : Error
+2023-05-14 16:52:24,194 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 3
+2023-05-14 16:52:24,212 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 4
+2023-05-14 16:52:25,764 INFO  [Thread-8] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2023-05-14 16:52:25,774 INFO  [Thread-8] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 16:52:25,989 INFO  [Thread-8] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Shutdown initiated...
+2023-05-14 16:52:25,994 INFO  [Thread-8] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Shutdown completed.
+2023-05-14 16:52:26,237 INFO  [restartedMain] com.group6.project.ProjectApplication : Starting ProjectApplication using Java 17.0.2 with PID 1904 (E:\Workspace\Group-6-Project\build\classes\java\main started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 16:52:26,238 DEBUG [restartedMain] com.group6.project.ProjectApplication : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 16:52:26,238 INFO  [restartedMain] com.group6.project.ProjectApplication : The following 1 profile is active: "dev"
+2023-05-14 16:52:28,531 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2023-05-14 16:52:28,532 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-14 16:52:28,598 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2023-05-14 16:52:28,770 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2023-05-14 16:52:28,773 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Added connection conn21: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 16:52:28,774 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Start completed.
+2023-05-14 16:52:28,776 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 16:52:28,791 INFO  [restartedMain] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 16:52:29,304 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 16:52:31,372 INFO  [restartedMain] com.group6.project.ProjectApplication : Started ProjectApplication in 5.271 seconds (process running for 942.084)
+2023-05-14 16:52:31,378 DEBUG [restartedMain] com.group6.project.ProjectApplication : Debug
+2023-05-14 16:52:31,379 INFO  [restartedMain] com.group6.project.ProjectApplication : Info
+2023-05-14 16:52:31,379 WARN  [restartedMain] com.group6.project.ProjectApplication : Warning
+2023-05-14 16:52:31,379 ERROR [restartedMain] com.group6.project.ProjectApplication : Error
+2023-05-14 16:52:31,396 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 3
+2023-05-14 16:52:31,401 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 4
+2023-05-14 16:52:31,799 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 2244 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 16:52:31,802 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 16:52:31,804 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 16:52:35,723 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 16:52:36,179 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 16:52:36,182 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 16:52:36,309 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 16:52:36,499 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 16:52:37,293 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 16:52:39,299 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 16:52:45,558 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 14.595 seconds (process running for 20.092)
+2023-05-14 16:52:45,674 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 16:52:45,677 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 16:52:45,678 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 16:52:45,678 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 16:52:46,431 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 16:52:46,437 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 16:52:47,417 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 16:52:47,428 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 16:52:47,429 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 16:52:47,435 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 16:52:47,436 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 16:52:47,440 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 16:52:47,463 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 16:53:47,785 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 5776 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 16:53:47,787 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 16:53:47,791 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 16:53:52,374 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 16:53:52,844 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 16:53:52,849 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 16:53:52,979 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 16:53:53,108 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 16:53:53,887 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 16:53:56,136 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 16:54:01,819 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 14.787 seconds (process running for 17.995)
+2023-05-14 16:54:01,910 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 16:54:01,911 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 16:54:01,912 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 16:54:01,912 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 16:54:02,467 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 16:54:02,484 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 16:54:03,309 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 16:54:03,317 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 16:54:03,317 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 16:54:03,318 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 16:54:03,319 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 16:54:03,321 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 16:54:03,329 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 16:56:10,000 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 14044 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 16:56:10,002 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 16:56:10,004 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 16:56:14,406 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 16:56:14,863 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 16:56:14,875 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 16:56:14,992 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 16:56:15,160 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 16:56:15,995 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 16:56:18,065 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 16:56:26,628 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 17.466 seconds (process running for 21.243)
+2023-05-14 16:56:27,065 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 16:56:27,070 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 16:56:27,081 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 16:56:27,082 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 16:56:28,084 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 16:56:28,091 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 16:56:29,318 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 16:56:29,511 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 16:56:29,518 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 16:58:51,797 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 7780 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 16:58:51,800 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 16:58:51,801 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 16:58:55,960 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 16:58:56,476 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 16:58:56,488 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 16:58:56,604 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 16:58:56,785 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 16:58:58,068 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 16:59:00,424 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 16:59:07,989 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 16.989 seconds (process running for 20.468)
+2023-05-14 16:59:08,166 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 16:59:08,168 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 16:59:08,169 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 16:59:08,169 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 16:59:09,006 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 16:59:09,019 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 16:59:43,763 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s171ms457µs400ns).
+2023-05-14 17:01:29,041 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s229ms585µs700ns).
+2023-05-14 17:02:24,850 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 7992 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:02:24,852 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:02:24,854 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:02:28,324 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:02:28,800 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:02:28,802 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:02:28,900 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:02:29,038 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:02:29,703 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:02:31,365 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:02:37,417 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 13.26 seconds (process running for 16.339)
+2023-05-14 17:02:37,513 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:02:37,521 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:02:37,528 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:02:37,534 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:02:38,171 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:02:38,177 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:02:39,085 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:02:39,101 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:02:39,107 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:02:39,109 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:02:39,110 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:02:39,112 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:02:39,121 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:03:21,791 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 11572 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:03:21,795 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:03:21,801 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:03:25,338 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:03:25,763 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:03:25,766 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:03:25,864 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:03:25,989 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:03:26,670 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:03:28,344 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:03:33,991 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 13.087 seconds (process running for 16.073)
+2023-05-14 17:03:34,082 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:03:34,084 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:03:34,084 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:03:34,084 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:03:34,676 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:03:34,682 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:03:35,909 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:03:35,957 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:03:35,959 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:03:35,961 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:03:35,977 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:03:35,991 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:03:36,023 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:09:11,434 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 11320 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:09:11,438 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:09:11,454 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:09:16,080 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:09:16,539 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:09:16,551 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:09:16,708 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:09:16,949 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:09:17,862 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:09:20,707 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:09:31,651 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 21.086 seconds (process running for 26.8)
+2023-05-14 17:09:31,875 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:09:31,886 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:09:31,892 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:09:31,894 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:09:33,563 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:09:33,568 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:09:35,026 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:09:35,038 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:09:35,046 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:09:35,049 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:09:35,050 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:09:35,052 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:09:35,059 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:10:13,421 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 6616 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:10:13,424 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:10:13,428 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:10:18,129 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:10:18,549 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:10:18,554 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:10:18,649 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:10:18,778 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:10:19,712 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:10:21,431 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:10:28,501 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 15.823 seconds (process running for 19.465)
+2023-05-14 17:10:28,619 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:10:28,623 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:10:28,633 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:10:28,634 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:10:29,284 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:10:29,298 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:10:30,405 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:10:30,422 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:10:30,429 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:10:30,430 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:10:30,432 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:10:30,434 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:10:30,487 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:11:58,542 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Starting CurrenciesServiceTest using Java 17.0.2 with PID 13984 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:11:58,549 DEBUG [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:11:58,552 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:12:03,354 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:12:03,798 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:12:03,803 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:12:04,008 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:12:04,359 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:12:05,412 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:12:07,090 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:12:15,242 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Started CurrenciesServiceTest in 17.343 seconds (process running for 19.623)
+2023-05-14 17:12:15,368 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:12:15,370 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:12:15,371 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:12:15,371 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:12:16,021 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:12:16,028 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:12:17,066 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:12:17,072 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:12:17,073 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:12:17,075 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:12:17,077 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:12:17,078 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:12:17,082 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:15:34,117 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 968 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:15:34,119 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:15:34,121 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:15:39,804 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:15:40,576 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:15:40,592 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:15:41,020 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:15:41,464 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:15:42,507 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:15:44,805 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:15:52,234 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 19.165 seconds (process running for 21.984)
+2023-05-14 17:15:52,353 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:15:52,354 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:15:52,356 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:15:52,357 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:15:53,173 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:15:53,180 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:15:54,561 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:15:54,566 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:15:54,567 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:15:54,577 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:15:54,578 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:15:54,580 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:15:54,584 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:17:09,708 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 10560 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:17:09,713 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:17:09,725 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:17:14,384 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:17:14,792 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:17:14,796 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:17:14,891 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:17:15,012 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:17:15,670 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:17:17,307 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:17:23,814 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 15.599 seconds (process running for 18.95)
+2023-05-14 17:17:23,907 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:17:23,909 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:17:23,911 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:17:23,912 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:17:24,519 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:17:24,528 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:17:25,690 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:17:25,697 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:17:25,700 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:17:25,703 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:17:25,705 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:17:25,708 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:17:25,712 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:18:49,205 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 13816 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:18:49,208 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:18:49,211 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:18:53,146 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:18:53,565 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:18:53,572 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:19:01,498 INFO  [restartedMain] com.group6.project.ProjectApplication : Starting ProjectApplication using Java 17.0.2 with PID 13988 (E:\Workspace\Group-6-Project\build\classes\java\main started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:19:01,504 DEBUG [restartedMain] com.group6.project.ProjectApplication : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:19:01,506 INFO  [restartedMain] com.group6.project.ProjectApplication : The following 1 profile is active: "dev"
+2023-05-14 17:19:06,212 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2023-05-14 17:19:06,212 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-14 17:19:06,411 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2023-05-14 17:19:06,963 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:19:07,360 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:19:07,364 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:19:07,475 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:19:07,627 INFO  [restartedMain] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:19:08,344 INFO  [restartedMain] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:19:10,502 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:19:15,140 INFO  [restartedMain] com.group6.project.ProjectApplication : Started ProjectApplication in 14.553 seconds (process running for 15.5)
+2023-05-14 17:19:15,222 DEBUG [restartedMain] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:19:15,223 INFO  [restartedMain] com.group6.project.ProjectApplication : Info
+2023-05-14 17:19:15,224 WARN  [restartedMain] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:19:15,224 ERROR [restartedMain] com.group6.project.ProjectApplication : Error
+2023-05-14 17:19:15,853 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:19:15,860 INFO  [restartedMain] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:19:18,957 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-14 17:19:22,834 INFO  [http-nio-8080-exec-5] org.springdoc.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 2669 ms
+2023-05-14 17:21:27,899 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Starting CurrenciesServiceTest using Java 17.0.2 with PID 10660 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:21:27,901 DEBUG [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:21:27,902 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:21:33,128 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:21:33,562 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:21:33,572 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:21:33,828 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:21:34,044 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:21:34,764 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:21:36,339 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:21:43,410 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Started CurrenciesServiceTest in 16.51 seconds (process running for 19.738)
+2023-05-14 17:21:43,507 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:21:43,509 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:21:43,510 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:21:43,512 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:21:44,245 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:21:44,252 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:21:45,759 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:21:45,772 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:21:45,773 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:21:45,775 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:21:45,777 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:21:45,779 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:21:45,785 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:26:08,926 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Starting CurrenciesServiceTest using Java 17.0.2 with PID 220 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:26:08,929 DEBUG [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:26:08,931 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:26:13,270 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:26:13,710 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:26:13,719 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:26:13,850 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:26:14,013 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:26:14,854 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:26:16,870 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:26:23,145 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Started CurrenciesServiceTest in 15.38 seconds (process running for 18.912)
+2023-05-14 17:26:23,274 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:26:23,276 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:26:23,278 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:26:23,283 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:26:23,995 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:26:24,001 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:29:58,084 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Starting DigitalGoodsServiceTest using Java 17.0.2 with PID 14348 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:29:58,088 DEBUG [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:29:58,090 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:30:02,389 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:30:02,921 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:30:02,928 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:30:03,048 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:30:03,192 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:30:04,066 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:30:06,327 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:30:14,121 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Started DigitalGoodsServiceTest in 16.886 seconds (process running for 20.334)
+2023-05-14 17:30:14,288 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:30:14,289 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:30:14,290 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:30:14,291 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:30:15,149 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:30:15,156 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:30:17,108 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:30:17,353 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:30:17,379 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:31:36,634 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Starting DigitalGoodsServiceTest using Java 17.0.2 with PID 14356 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:31:36,636 DEBUG [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:31:36,638 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:31:39,993 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:31:40,432 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:31:40,434 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:31:40,551 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:31:40,669 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:31:41,337 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:31:42,983 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:31:48,587 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Started DigitalGoodsServiceTest in 12.628 seconds (process running for 15.394)
+2023-05-14 17:31:48,674 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:31:48,676 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:31:48,682 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:31:48,737 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:31:49,250 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:31:49,257 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:31:50,171 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:31:50,185 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:31:50,191 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:31:50,193 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:31:50,195 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:31:50,198 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:31:50,218 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:33:10,020 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Starting DigitalGoodsServiceTest using Java 17.0.2 with PID 5776 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:33:10,022 DEBUG [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:33:10,024 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:33:13,589 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:33:14,009 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:33:14,013 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:33:14,118 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:33:14,251 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:33:14,865 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:33:16,717 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:33:22,815 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Started DigitalGoodsServiceTest in 13.444 seconds (process running for 16.513)
+2023-05-14 17:33:22,908 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:33:22,909 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:33:22,910 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:33:22,910 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:33:23,480 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:33:23,489 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:33:24,245 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:33:24,253 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:33:24,258 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:33:24,259 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:33:24,260 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:33:24,262 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:33:24,265 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:36:16,786 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Starting CurrenciesServiceTest using Java 17.0.2 with PID 15228 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:36:16,789 DEBUG [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:36:16,791 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:36:20,299 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:36:20,775 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:36:20,779 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:36:20,886 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:36:21,022 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:36:21,785 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:36:24,767 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:36:31,189 INFO  [Test worker] com.group6.project.relational.digitalassets.CurrenciesServiceTest : Started CurrenciesServiceTest in 15.059 seconds (process running for 18.187)
+2023-05-14 17:36:31,313 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:36:31,315 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:36:31,317 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:36:31,319 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:36:32,129 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:36:32,144 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:36:33,222 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:36:33,228 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:36:33,229 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:36:33,234 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:36:33,238 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:36:33,240 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:36:33,254 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:37:15,770 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Starting DigitalGoodsServiceTest using Java 17.0.2 with PID 5688 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:37:15,772 DEBUG [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:37:15,774 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:37:22,076 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:37:22,867 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:37:22,870 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:37:23,004 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:37:23,175 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:37:23,787 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:37:25,760 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:37:31,642 INFO  [Test worker] com.group6.project.relational.digitalassets.DigitalGoodsServiceTest : Started DigitalGoodsServiceTest in 16.623 seconds (process running for 19.116)
+2023-05-14 17:37:31,752 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:37:31,753 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:37:31,754 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:37:31,754 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:37:32,570 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:37:32,576 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:37:33,689 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:37:33,709 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:37:33,710 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:37:33,715 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:37:33,717 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:37:33,728 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:37:33,753 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:43:07,581 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 14628 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:43:07,583 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:43:07,585 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:43:11,263 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:43:11,692 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:43:11,695 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:43:11,796 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:43:11,935 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:43:12,723 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:43:14,719 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:43:22,836 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 15.923 seconds (process running for 18.282)
+2023-05-14 17:43:22,928 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:43:22,929 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:43:22,930 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:43:22,930 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:43:23,498 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:43:23,512 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:43:24,429 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:43:24,438 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:43:24,439 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:43:24,440 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:43:24,441 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:43:24,443 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:43:24,447 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2023-05-14 17:47:15,235 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Starting AccountInventoryServiceTest using Java 17.0.2 with PID 13592 (started by Administrator in E:\Workspace\Group-6-Project)
+2023-05-14 17:47:15,237 DEBUG [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-05-14 17:47:15,240 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : The following 1 profile is active: "dev"
+2023-05-14 17:47:21,198 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-05-14 17:47:22,232 INFO  [Test worker] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:se452db user=SA
+2023-05-14 17:47:22,238 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-05-14 17:47:22,395 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 17:47:22,702 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14 17:47:24,150 INFO  [Test worker] SQL dialect : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-14 17:47:26,666 INFO  [Test worker] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 17:47:35,735 INFO  [Test worker] com.group6.project.relational.digitalassets.AccountInventoryServiceTest : Started AccountInventoryServiceTest in 21.582 seconds (process running for 25.08)
+2023-05-14 17:47:35,900 DEBUG [Test worker] com.group6.project.ProjectApplication : Debug
+2023-05-14 17:47:35,902 INFO  [Test worker] com.group6.project.ProjectApplication : Info
+2023-05-14 17:47:35,903 WARN  [Test worker] com.group6.project.ProjectApplication : Warning
+2023-05-14 17:47:35,903 ERROR [Test worker] com.group6.project.ProjectApplication : Error
+2023-05-14 17:47:36,788 INFO  [Test worker] com.group6.project.ProjectApplication : Num 3
+2023-05-14 17:47:36,794 INFO  [Test worker] com.group6.project.ProjectApplication : Num 4
+2023-05-14 17:47:38,214 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-14 17:47:38,222 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:47:38,223 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:47:38,225 WARN  [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : SQL Error: 90121, SQLState: 90121
+2023-05-14 17:47:38,226 ERROR [SpringApplicationShutdownHook] org.hibernate.engine.jdbc.spi.SqlExceptionHelper : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-14 17:47:38,230 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-05-14 17:47:38,233 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.

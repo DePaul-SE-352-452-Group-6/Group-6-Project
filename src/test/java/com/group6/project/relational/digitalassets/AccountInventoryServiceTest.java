@@ -31,6 +31,11 @@ public class AccountInventoryServiceTest {
     private AccountInventoryRepository accountInventoryRepository;
 
     @Autowired
+    private AccountRepository accountRepo;
+    @Autowired
+    private DigitalGoodsRepository digitalRepo;
+
+    @Autowired
     private MockMvc mockMvc;
 
 
@@ -50,57 +55,62 @@ public class AccountInventoryServiceTest {
 
 
 //    TODO these two methods failed, should debug
-//    @Autowired
-//    private ObjectMapper objectMapper;
-//
-//    @Test
-//    public void addAccountInventory() throws Exception {
-//        // given - setup or precondition
-//        Account account = new Account();
-//        account.setID(23);
-//        account.setUserName("Larry");
-//        account.setPassword("David");
-//        account.setSignupDate(new Date(1681664605149L));
-//        account.setLastSeenDate(new Date(1681664605149L));
-//
-//        DigitalGood digitalGood = new DigitalGood();
-//        digitalGood.setId(6);
-//        digitalGood.setName("meat");
-//        digitalGood.setCurrencyId(2);
-//        digitalGood.setCosts(100);
-//
-//        AccountInventory accountInventory = new AccountInventory(5, account, digitalGood, 100);
-//
-//        String studentAsJson = objectMapper.writeValueAsString(accountInventory);
-//
-//
-//        // when - action
-//        var request = MockMvcRequestBuilders.post(ACCOUNT_INVENTORY_URL+"/update");
-//        request.contentType(MediaType.APPLICATION_JSON);
-//        request.content(studentAsJson);
-//        ResultActions response = mockMvc.perform(request);
-//
-//        var jsonResponse = response.andReturn().getResponse().getContentAsString();
-//        // then - verify the output
-//        Number updatedAccountInventory = new ObjectMapper().readValue(jsonResponse, Number.class);
-//
-//        response.andExpect(MockMvcResultMatchers.status().isOk());
-//        assertNotEquals(updatedAccountInventory, accountInventory.getID());
-//    }
-//
-//    @Test
-//    public void removeStudent() throws Exception {
-//        // given - setup or precondition
-//        long beforeSize = accountInventoryRepository.count();
-//
-//        // when - action
-//        var request = MockMvcRequestBuilders.delete(ACCOUNT_INVENTORY_URL+"/1");
-//        ResultActions response = mockMvc.perform(request);
-//
-//        long afterSize = accountInventoryRepository.count();
-//
-//        response.andExpect(MockMvcResultMatchers.status().isOk());
-//        assertEquals(beforeSize - 1, afterSize);
-//    }
+    @Autowired
+    private ObjectMapper objectMapper;
+
+    @Test
+    public void addAccountInventory() throws Exception {
+        // given - setup or precondition
+        long beforeSize = accountInventoryRepository.count();
+        Account account = new Account();
+        account.setID(23);
+        account.setUserName("Larry");
+        account.setPassword("David");
+        account.setSignupDate(new Date(1681664605149L));
+        account.setLastSeenDate(new Date(1681664605149L));
+        accountRepo.save(account);
+
+        DigitalGood digitalGood = new DigitalGood();
+        digitalGood.setId(6);
+        digitalGood.setName("meat");
+        digitalGood.setCurrencyId(2);
+        digitalGood.setCosts(100);
+        digitalRepo.save(digitalGood);
+
+        AccountInventoryRequest accountInventoryRequest = new AccountInventoryRequest(0, account.getID(), digitalGood.getId(), 500);
+
+        String digitalGoodAsJson = objectMapper.writeValueAsString(accountInventoryRequest);
+
+        // when - action
+        var request = MockMvcRequestBuilders.post(ACCOUNT_INVENTORY_URL+"/update");
+        request.contentType(MediaType.APPLICATION_JSON);
+        request.content(digitalGoodAsJson);
+        ResultActions response = mockMvc.perform(request);
+
+        long afterSize = accountInventoryRepository.count();
+
+        var jsonResponse = response.andReturn().getResponse().getContentAsString();
+         //then - verify the output
+        Long newId = new ObjectMapper().readValue(jsonResponse, Long.class);
+
+        response.andExpect(MockMvcResultMatchers.status().isOk());
+        assertNotEquals(newId , accountInventoryRequest.getId());
+        assertEquals(beforeSize + 1, afterSize);
+    }
+
+    @Test
+    public void removeAccountInventory() throws Exception {
+        // given - setup or precondition
+        long beforeSize = accountInventoryRepository.count();
+
+        // when - action
+        var request = MockMvcRequestBuilders.delete(ACCOUNT_INVENTORY_URL+"/1");
+        ResultActions response = mockMvc.perform(request);
+
+        long afterSize = accountInventoryRepository.count();
+
+        response.andExpect(MockMvcResultMatchers.status().isOk());
+        assertEquals(beforeSize - 1, afterSize);
+    }
 
 }

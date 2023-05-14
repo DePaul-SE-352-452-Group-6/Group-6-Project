@@ -66,10 +66,10 @@ public class CurrenciesServiceTest {
 
         var jsonResponse = response.andReturn().getResponse().getContentAsString();
         // then - verify the output
-        Number updatedCurrency = new ObjectMapper().readValue(jsonResponse, Number.class);
+        Long updatedCurrency = new ObjectMapper().readValue(jsonResponse, Long.class);
 
         response.andExpect(MockMvcResultMatchers.status().isOk());
-        assertNotEquals(updatedCurrency, currency.getId());
+        assertEquals(updatedCurrency, currency.getId());
     }
 
     //Take care here, because each class's primary key has correlation with each other more or less

@@ -78,7 +78,7 @@ public class AccountInventoryService {
     //actually, post and get methods exert the same function here, so I just need to put them together
     @RequestMapping(value = "/update", method = {RequestMethod.POST, RequestMethod.PUT})
     @Operation(summary = "PUT or POST the account inventory and returns the account inventory id")
-    public long save(AccountInventoryRequest accountInventoryRequest) {
+    public long save(@RequestBody AccountInventoryRequest accountInventoryRequest) {
         log.traceEntry("enter save", accountInventoryRequest);
         long accountId = accountInventoryRequest.getAccountId();
         long digitalGoodID = accountInventoryRequest.getDigitalGoodID();
@@ -91,9 +91,9 @@ public class AccountInventoryService {
         return accountInventory.getID();
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     @Operation(summary = "Delete the account inventory")
-    public void delete(long id) {
+    public void delete(@PathVariable("id") Long id) {
         log.traceEntry("Enter delete", id);
         repo.deleteById(id);
         log.traceExit("Exit delete");
