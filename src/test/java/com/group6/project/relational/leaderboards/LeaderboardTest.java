@@ -11,7 +11,7 @@ public class LeaderboardTest {
 
     @DisplayName("Test Create Account")
     @Test
-    public void testAccount(){
+    public void testLeaderboard(){
         Leaderboard entry = new Leaderboard();
         entry.setID(1);
         entry.setUserName("James");
