@@ -1,6 +1,5 @@
 package com.group6.project.relational.leaderboards;
 import com.group6.project.relational.leaderboards.*;
-import com.group6.project.relational.digitalassets.Currency;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +36,15 @@ public class LeaderboardTest {
         var findEntry = repo.findById(1);
         assertEquals(entry.getUserName(), "James");
 
+    }
 
+    public void testRepoRemove(){
+        var initialRepo = repo.count();
+        repo.deleteById(1L);
+        var endRepo = repo.count();
+        assertEquals(initialRepo, endRepo+1);
+
+        var endCount = repo.count();
+        assertEquals(endCount, 0L);
     }
 }
