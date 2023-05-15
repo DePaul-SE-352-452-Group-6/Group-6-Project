@@ -9,9 +9,9 @@ This is group 6 project for [DePaul SE452](http://www.cdm.depaul.edu/academics/p
 
 | Member | Feature
 | ----------- | -----------
-| Cameron | Account Creation
+| Cameron | Account Creation and Account Currency
 | Matthew | Leaderboards
-| Zhihong | Currencies and Digital Goods
+| Zhihong | Currencies, Digital Goods and Account Inventory
 
 <br/>
 
@@ -51,6 +51,9 @@ Our schedules are listed on [When2Meet](https://www.when2meet.com/?19400023-628g
 ![image1](https://user-images.githubusercontent.com/129224800/232379484-9a3e8617-4ed3-42a3-bf19-8901096a57cc.png)
 ![image2](https://user-images.githubusercontent.com/129224800/232379638-cf8f361d-8205-4dbc-98b8-df54d50be8bb.png)
 ![image](https://user-images.githubusercontent.com/129224800/232624999-791405cc-7954-441a-a5fd-a9caeb24f867.png)
-
+![ServiceTest running condition(Milestone3)](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/33efe219-d956-49b5-8fae-ef7d210e1c24)
+![restful service on swagger(Milestone3)](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/26ba8e64-936c-4af8-8651-94bc14cc8140)
+![post operation add to h2 database successfully(Milestone3)](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/ba3b243c-3c74-4ffc-8839-cc308a5eb3f4)
+![docker running condition(Milestone3)](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/a9fad559-cc6a-43a8-b7f6-3c0610f68328)
 
 
