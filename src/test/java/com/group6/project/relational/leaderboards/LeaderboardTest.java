@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LeaderboardTest {
 
-    @DisplayName("Test Create Account")
+    @DisplayName("Test Create Leaderboard entry")
     @Test
     public void testLeaderboard(){
         Leaderboard entry = new Leaderboard();
@@ -19,5 +19,24 @@ public class LeaderboardTest {
 
         String expectedNoError = "Leaderboard(id=1, userName=James, amount=10000)";
         assertEquals(expectedNoError, entry.toString());
+    }
+
+    private LeaderboardRepository repo;
+
+    public void testRepoAdd(){
+        Leaderboard entry = new Leaderboard();
+        entry.setID(1);
+        entry.setUserName("James");
+        entry.setAmount(10000);
+
+        var initialRepo = repo.count();
+        repo.save(entry);
+        var endRepo = repo.count();
+        assertEquals(initialRepo + 1, endRepo);
+
+        var findEntry = repo.findById(1);
+        assertEquals(entry.getUserName(), "James");
+
+
     }
 }
