@@ -10,7 +10,7 @@ import jakarta.persistence.*;
 public class Leaderboard {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "entry_id")
+    @Column(name = "id")
     private long id;
 
     @Column(name = "user_name",nullable = false,unique = true)

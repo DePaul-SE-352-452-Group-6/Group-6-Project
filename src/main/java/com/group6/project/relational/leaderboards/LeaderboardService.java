@@ -18,12 +18,13 @@ import org.springframework.web.bind.annotation.*;
 import lombok.extern.log4j.Log4j2;
 
 @RestController
-@RequestMapping("/api/accounts")
+@RequestMapping("/api/leaderboards")
 @Tag(name = "Leaderboard", description = "All of the leaderboard entries created for users")
 @Log4j2
 public class LeaderboardService {
     @Autowired
     private LeaderboardRepository repo;
+
 
     @GetMapping
     @Operation(summary = "Returns all the leaderboard entries in the database")
@@ -36,25 +37,18 @@ public class LeaderboardService {
         return repo.findAll();
     }
 
-    @GetMapping("/{id}")
-    public Leaderboard get(@PathVariable("id") long id) {
-        log.traceEntry("get", id);
-        Leaderboard entry = repo.findById(id);
-        log.traceExit("get", id);
-        return entry;
-    }
 
     @PostMapping
     @Operation(summary = "Save the leaderboard entry and returns the entry id")
-    public void save(@RequestBody Leaderboard Leaderboard) {
+    public void save(Leaderboard Leaderboard) {
         log.traceEntry("enter save", Leaderboard);
         repo.save(Leaderboard);
         log.traceExit("exit save", Leaderboard);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     @Operation(summary = "Delete the leaderboard entry")
-    public void delete(long id) {
+    public void delete(@PathVariable long id) {
         log.traceEntry("Enter delete", id);
         repo.deleteById(id);
         log.traceExit("Exit delete");
@@ -71,4 +65,6 @@ public class LeaderboardService {
         });
         return errors;
     }
+
+
 }
