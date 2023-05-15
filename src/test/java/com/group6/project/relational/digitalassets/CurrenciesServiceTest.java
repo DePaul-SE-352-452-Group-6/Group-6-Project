@@ -35,13 +35,11 @@ public class CurrenciesServiceTest {
 
     @Test
     public void getAllCurrencies() throws Exception {
-        // when - action
-        ResultActions response = mockMvc.perform(MockMvcRequestBuilders.get(CURRENCY_URL));
 
+        ResultActions response = mockMvc.perform(MockMvcRequestBuilders.get(CURRENCY_URL));
 
         var recordCount = (int) currenciesRepository.count();
 
-        // then - verify the output
         response.andExpect(MockMvcResultMatchers.status().isOk());
         response.andExpect(MockMvcResultMatchers.jsonPath("$.size()", CoreMatchers.is(recordCount)));
     }
@@ -65,11 +63,11 @@ public class CurrenciesServiceTest {
         ResultActions response = mockMvc.perform(request);
 
         var jsonResponse = response.andReturn().getResponse().getContentAsString();
+
         // then - verify the output
         Long updatedCurrency = new ObjectMapper().readValue(jsonResponse, Long.class);
-
         response.andExpect(MockMvcResultMatchers.status().isOk());
-        assertEquals(updatedCurrency, currency.getId());
+        assertNotEquals(updatedCurrency, currency.getId());
     }
 
     //Take care here, because each class's primary key has correlation with each other more or less

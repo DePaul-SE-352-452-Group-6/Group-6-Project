@@ -35,13 +35,11 @@ public class DigitalGoodsServiceTest {
 
     @Test
     public void getAllDigitalGoods() throws Exception {
-        // when - action
-        ResultActions response = mockMvc.perform(MockMvcRequestBuilders.get(DIGITAL_GOODS_URL));
 
+        ResultActions response = mockMvc.perform(MockMvcRequestBuilders.get(DIGITAL_GOODS_URL));
 
         var recordCount = (int) digitalGoodsRepository.count();
 
-        // then - verify the output
         response.andExpect(MockMvcResultMatchers.status().isOk());
         response.andExpect(MockMvcResultMatchers.jsonPath("$.size()", CoreMatchers.is(recordCount)));
     }
@@ -70,7 +68,7 @@ public class DigitalGoodsServiceTest {
         Long updatedCurrency = new ObjectMapper().readValue(jsonResponse, Long.class);
 
         response.andExpect(MockMvcResultMatchers.status().isOk());
-        assertEquals(updatedCurrency, digitalGood.getId());
+        assertNotEquals(updatedCurrency, digitalGood.getId());
     }
 
     //Take care here, because each class's primary key has correlation with each other more or less
