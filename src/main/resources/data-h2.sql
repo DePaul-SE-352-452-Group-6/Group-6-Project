@@ -26,3 +26,9 @@ insert into account_inventory(account_id, digital_good_id, amount) values (1, 1,
 insert into account_inventory(account_id, digital_good_id, amount) values (2, 2,5);
 insert into account_inventory(account_id, digital_good_id, amount) values (2, 4,1);
 insert into account_inventory(account_id, digital_good_id, amount) values (3, 1,10);
+
+--insert leaderboard entry data
+insert into leaderboard(id, amount, user_name) values (123, 10000, 'James');
+insert into leaderboard(id, amount, user_name) values (124, 20000, 'Daniel');
+insert into leaderboard(id, amount, user_name) values (125, 30000, 'Emma');
+insert into leaderboard(id, amount, user_name) values (126, 40000, 'Ryan');
