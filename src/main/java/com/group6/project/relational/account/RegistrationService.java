@@ -57,12 +57,11 @@ public class RegistrationService {
 
         // Create new user's account
 
-        Account user = Account.builder()
-                .userName(signUpRequest.getUsername())
+        Account user = new Account();// Account.builder()
+        user.setUserName(signUpRequest.getUsername());
                 //.email(signUpRequest.getEmail())
-                .password(encoder.encode(signUpRequest.getPassword()))
-                .roles(roles)
-                .build();
+        user.setPassword(encoder.encode(signUpRequest.getPassword()));
+        user.setRoles(roles);
 
         userRepository.save(user);
 

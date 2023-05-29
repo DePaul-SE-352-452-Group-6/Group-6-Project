@@ -62,13 +62,12 @@ public class AccountInventoryServiceTest {
     public void addAccountInventory() throws Exception {
         // given - setup or precondition
         long beforeSize = accountInventoryRepository.count();
-        Account account = Account.builder()
-                            .ID(23)
-                            .userName("Larry")
-                            .password("David")
-                            .signupDate(new Date(1681664605149L))
-                            .lastSeenDate(new Date(1681664605149L))
-                            .build();
+        Account account = new Account();
+        account.setID(23);
+        account.setUserName("Larry");
+        account.setPassword("David");
+        account.setSignupDate(new Date(1681664605149L));
+        account.setLastSeenDate(new Date(1681664605149L));
 
         accountRepo.save(account);
 

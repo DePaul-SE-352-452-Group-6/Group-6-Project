@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@Builder
+//@Builder
 @Table(name = "Account")
 public class Account {
     @Id
