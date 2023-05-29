@@ -2,12 +2,16 @@ package com.group6.project.relational.account;
 
 import java.sql.Date;
 import java.util.List;
+import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.group6.project.relational.digitalassets.AccountInventory;
 import jakarta.persistence.*;
 
 import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 /**
  * Additional setup with mapping between code and table/columns when they do not match  class/property
@@ -15,6 +19,7 @@ import lombok.Data;
 
 @Data
 @Entity
+@Builder
 @Table(name = "Account")
 public class Account {
     @Id
@@ -67,4 +72,10 @@ public class Account {
     @OneToMany
     @JoinColumn(name = "digital_good_id")
     private List<AccountInventory> inventory;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<UserRole> roles;
 }

@@ -16,6 +16,7 @@
  * <li>Added AccountCurrency Service Swagger Documentation
  * <li>Integrated swagger into project
  * <li>Added nullable and unique elements to generatedvalue on columns not discussed in class
+ * <li>Integrated account registration and authentication
  * </ol>
  * @see Account for user account data
  * @see AccountCurrency for user account currencies

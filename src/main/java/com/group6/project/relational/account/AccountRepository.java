@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.sql.Date;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Example of adding additional finders
@@ -12,7 +13,9 @@ import java.util.List;
 public interface AccountRepository extends JpaRepository<Account, Long> {
 
     public Account findById(long id);
-    public Account findByUserName(String userName);
+    public Optional<Account> findByUserName(String userName);
+
+    Boolean existsByUserName(String userName);
 
     public Account findByFacebookID(Integer id);
 

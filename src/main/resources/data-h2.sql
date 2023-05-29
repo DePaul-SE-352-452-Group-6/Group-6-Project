@@ -32,3 +32,6 @@ insert into leaderboard(id, amount, user_name) values (123, 10000, 'James');
 insert into leaderboard(id, amount, user_name) values (124, 20000, 'Daniel');
 insert into leaderboard(id, amount, user_name) values (125, 30000, 'Emma');
 insert into leaderboard(id, amount, user_name) values (126, 40000, 'Ryan');
+
+INSERT INTO user_roles(name) VALUES('ROLE_USER');
+INSERT INTO user_roles(name) VALUES('ROLE_ADMIN');
