@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DigitalGood</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+<body>
+<div class="hero">
+    <div>
+        <p class="title">Digital Goods Detail</p>
+        <form method="post" th:action="@{/digitalGood}" th:object="${digitalGood}">
+            <input class="input" id="id" placeholder="" required th:field="*{id}" type="text" readonly/>
+            <input class="input"id="name" placeholder="Enter Name" required th:field="*{name}" type="text"/>
+            <input class="input"id="costs" placeholder="Enter Costs" required th:field="*{costs}" type="text"/>
+            <input class="input"id="currencyId" placeholder="Enter CurrencyId" required th:field="*{currencyId}" type="text"/>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link" th:text="${btnAddOrModifyLabel}"></button>
+
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <p class="title">Digital Goods List</p>
+    <div th:if="${#lists.isEmpty(digitalGoods)}">No digitalGood</div>
+    <div th:unless="${#lists.isEmpty(digitalGoods)}">
+        <table class="table is-striped is-bordered">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Costs</th>
+                <th>CurrencyId</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tr th:each="digitalGood: ${digitalGoods}">
+                <td th:text="${digitalGood.id}"></td>
+                <td th:text="${digitalGood.name}"></td>
+                <td th:text="${digitalGood.costs}"></td>
+                <td th:text="${digitalGood.currencyId}"></td>
+                <td><a th:href="'digitalGood/edit/' + ${digitalGood.id}"><i class="fas fa-user-edit ml-2"></i></a></td>
+                <td><a th:href="'digitalGood/delete/' + ${digitalGood.id}"><i class="fas fa-user-times ml-2"></i></a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <strong>Group-6-Project-DigitalGood</strong> by
+        <a
+                href="https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project"
+        >Zhihong</a
+        >
+    </div>
+</footer>
+</body>
+</html>

@@ -13,3 +13,8 @@ spring:
     url: jdbc:postgresql://localhost:5432/se452db
     username: postgres
     password: password
+  data:
+    #Default mongoDB host and port
+    mongodb:
+      host: localhost
+      port: 27017

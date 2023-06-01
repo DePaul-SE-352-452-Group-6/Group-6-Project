@@ -1,6 +1,6 @@
 #Be sure to change volumn location
 #start:   docker-compose up -d
-#stop:    docker-compse down
+#stop:    docker-compose down
 
 version: '3.8'
 

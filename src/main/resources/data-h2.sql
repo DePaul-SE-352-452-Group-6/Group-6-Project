@@ -1,6 +1,14 @@
-insert into account(user_name, password,facebook_id,signup_date,last_seen_date) values ('larry', 'divad',123456789,'2023-01-03','2023-01-03');
-insert into account(user_name, password,apple_id,signup_date,last_seen_date) values ('michael', 'divad',987654321,'2022-01-01','2023-01-02');
-insert into account(user_name, password,google_id,signup_date,last_seen_date) values ('steven', 'divad',1010101010,'2021-01-01','2023-01-01');
+-- because in WebSecurityConfig, we have this method (BCryptPasswordEncoder passwordEncoder())
+-- This means that the passwords of each user we save to the database are encrypted.
+-- If we want to access the login page with the username 'larry' and password 'divad',
+-- we need to use the following website for encryption in order to achieve our goal
+-- https://bcrypt-generator.com/
+
+-- in conclusion, we can use following username and password to login
+-- (larry, divad)  (michael, divad)  (steven, divad)
+insert into account(user_name, password,facebook_id,signup_date,last_seen_date) values ('larry', '$2a$12$Fo4xdMlzz01MyODHw6x6.ODI3wlThVo0rdaNQlSLWziwrk36DwT82',123456789,'2023-01-03','2023-01-03');
+insert into account(user_name, password,apple_id,signup_date,last_seen_date) values ('michael', '$2a$12$Fo4xdMlzz01MyODHw6x6.ODI3wlThVo0rdaNQlSLWziwrk36DwT82',987654321,'2022-01-01','2023-01-02');
+insert into account(user_name, password,google_id,signup_date,last_seen_date) values ('steven', '$2a$12$Fo4xdMlzz01MyODHw6x6.ODI3wlThVo0rdaNQlSLWziwrk36DwT82',1010101010,'2021-01-01','2023-01-01');
 
 -- insert some data about currencies
 insert into currency(name, initial_count) values ('Gems', 500);

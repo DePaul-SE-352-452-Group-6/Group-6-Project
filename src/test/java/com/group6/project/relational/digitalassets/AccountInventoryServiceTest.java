@@ -4,11 +4,16 @@ import com.group6.project.relational.account.Account;
 import com.group6.project.relational.account.AccountRepository;
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.core.Is;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -37,6 +42,33 @@ public class AccountInventoryServiceTest {
 
     @Autowired
     private MockMvc mockMvc;
+
+    /**
+     * @BeforeEach runs this function before each CRUD operation of the test, and setupAuthentication() implements the login operation
+     *
+     * explanation:
+     * All requests will go through the security layer, because our permitAll does not include certain specific addresses.
+     *
+     * we just permit the kind of these websites
+     * .requestMatchers(antMatcher("/api/test/**")).permitAll()
+     * .requestMatchers(antMatcher("/h2-console/**")).permitAll()
+     * .requestMatchers(antMatcher("/swagger-ui/**")).permitAll()
+     *
+     * For example, when we want to implement a post on the currency swagger website, our website will become/api/currency,
+     * and our security will be in effect, blocking our access.
+     * And our test is based on this to implement crud operations on the swagger.
+     * At this point, our code needs to be changed to log in first and then test
+     */
+
+    @Autowired
+    private AuthenticationManager authenticationManager;
+
+    @BeforeEach
+    public void setupAuthentication() {
+        Authentication auth = new UsernamePasswordAuthenticationToken("larry", "divad");
+        Authentication authenticated = authenticationManager.authenticate(auth);
+        SecurityContextHolder.getContext().setAuthentication(authenticated);
+    }
 
 
     @Test

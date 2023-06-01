@@ -17,6 +17,11 @@ spring:
     defer-datasource-initialization: true
   datasource:
     url: jdbc:h2:mem:se452db
+  data:
+    #Default mongoDB host and port
+    mongodb:
+      host: localhost
+      port: 27017
   sql:
     init:
       platform: h2

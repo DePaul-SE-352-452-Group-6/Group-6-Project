@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface AccountCurrencyRepository extends JpaRepository<AccountCurrency, Long>{
 
-    public List<AccountCurrency> findByAccountID(Integer id);
+    public List<AccountCurrency> findByAccountID(Long id);
+
 
 }
