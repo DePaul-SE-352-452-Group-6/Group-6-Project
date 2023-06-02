@@ -4,6 +4,7 @@ This is group 6 project for [DePaul SE452](http://www.cdm.depaul.edu/academics/p
 * Milestone 1: Define the project and base structure and areas where each members will be working on
 * Milestone 2: Add SQL Persistence, Cameron added Account and Account Currency relational data as well as associated unit tests. Zhihong added Currencies, Digital Good data and Account Inventory relational data as well as associated unit tests. Matthew added Leaderboard relational data and unit tests.
 * Milestone 3: Add Docker,Documentation, Build Actions, Cameron, Zhihong and Matthew worked on Swagger, Docker, and CRUD service layer for our respective packages.
+* Final Milestone: Add Security, nosql and UI layer, Cameron worked on security, Zhihong worked on nosql, UI layer and all relative tests on digital assets in terms of Currency, DigitalGood and NoAccountInventory.
 
 ## Project Members
 
@@ -55,5 +56,12 @@ Our schedules are listed on [When2Meet](https://www.when2meet.com/?19400023-628g
 ![restful service on swagger(Milestone3)](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/26ba8e64-936c-4af8-8651-94bc14cc8140)
 ![post operation add to h2 database successfully(Milestone3)](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/ba3b243c-3c74-4ffc-8839-cc308a5eb3f4)
 ![docker running condition(Milestone3)](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/a9fad559-cc6a-43a8-b7f6-3c0610f68328)
+![logging page](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/aca41ff7-fe7e-401e-9186-614c81083a2e)
+![nonrelational-swagger](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/b1abc140-dba7-4d06-aafb-c71ac250e374)
+![mongodb-post](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/695ab039-fa09-45e8-9026-52da3b08d3a2)
+![currency-BeforeAndAfterModify](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/3c5b7595-5a12-4fb5-a90b-da7f856ec209)
+![digitalGood-BeforeAndAfterModify](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/d06933b8-f911-4839-a046-067936a78780)
+![normalDelete](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/f897ccc2-64b6-4868-967d-625aa5c3cade)
+![delete operation involved Cascading relationship-returnPage](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/ea8c28b2-bc7e-47bd-a80b-dbc9ef599620)
 
 
