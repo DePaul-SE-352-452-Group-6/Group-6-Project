@@ -17,6 +17,7 @@
  * <li>Integrated swagger into project
  * <li>Added nullable and unique elements to generatedvalue on columns not discussed in class
  * <li>Integrated account registration and authentication
+ * <li>Integrated self signed certificate groupsix.jks
  * </ol>
  * @see Account for user account data
  * @see AccountCurrency for user account currencies

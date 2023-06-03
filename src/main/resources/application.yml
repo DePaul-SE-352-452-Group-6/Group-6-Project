@@ -15,3 +15,11 @@ springdoc:
 spring:
   profiles:
     active: dev
+
+server:
+  ssl:
+    key-store: classpath:groupsix.jks
+    key-store-type: pkcs12
+    key-store-password: 123456
+    key-alias: groupsix
+  port: 8443
