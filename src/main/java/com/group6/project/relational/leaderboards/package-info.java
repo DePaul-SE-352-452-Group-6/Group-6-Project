@@ -8,12 +8,15 @@ package com.group6.project.relational.leaderboards;
  *
  * <ol>
  * <li>Created Leaderboard
+ * <li>Created Leaderboard database entries
  * <li>Created Leaderboard Repository
  * <li>Created Leaderboard Service
+ * <li>Created Leaderboard Controller
+ * <li>Created Leaderboard HTML representation
 
  * </ol>
- * @see Leaderboard for leaderboard entry creation
- * @see LeaderboardTest for leaderboard entry tests
+ * @see LeaderboardEntry for leaderboard entry creation
+
 
  * @see application-dev.yml for logging details
  * @see application-prod.yml for alternate database details
