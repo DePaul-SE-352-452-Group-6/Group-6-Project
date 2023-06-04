@@ -4,7 +4,7 @@ This is group 6 project for [DePaul SE452](http://www.cdm.depaul.edu/academics/p
 * Milestone 1: Define the project and base structure and areas where each members will be working on
 * Milestone 2: Add SQL Persistence, Cameron added Account and Account Currency relational data as well as associated unit tests. Zhihong added Currencies, Digital Good data and Account Inventory relational data as well as associated unit tests. Matthew added Leaderboard relational data and unit tests.
 * Milestone 3: Add Docker,Documentation, Build Actions, Cameron, Zhihong and Matthew worked on Swagger, Docker, and CRUD service layer for our respective packages.
-* Final Milestone: Add Security, nosql and UI layer, Cameron worked on security, Zhihong worked on nosql, UI layer and all relative tests on digital assets in terms of Currency, DigitalGood and NoAccountInventory.
+* Final Milestone: Add Security, nosql and UI layer, Cameron worked on security, Matthew worked on leaderboard UI implementation, Zhihong worked on nosql, UI layer and all relative tests on digital assets in terms of Currency, DigitalGood and NoAccountInventory.
 
 ## Project Members
 
@@ -63,5 +63,6 @@ Our schedules are listed on [When2Meet](https://www.when2meet.com/?19400023-628g
 ![digitalGood-BeforeAndAfterModify](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/d06933b8-f911-4839-a046-067936a78780)
 ![normalDelete](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/f897ccc2-64b6-4868-967d-625aa5c3cade)
 ![delete operation involved Cascading relationship-returnPage](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/ea8c28b2-bc7e-47bd-a80b-dbc9ef599620)
+![Leaderboard HTML Representation](/img/final-leaderboard-html.png?raw=true "Leaderboard HTML")
 
 
