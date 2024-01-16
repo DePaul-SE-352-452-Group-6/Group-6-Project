@@ -4,29 +4,61 @@
 
 version: '3.8'
 services:
-    postgresql:
-      container_name: demo-postgres
-      image: postgres
-      env_file: ./.env
-      volumes: 
-          - "$POSTGRES_EXTERNAL_LOC:/var/lib/postgresql/data"
-      restart: always
-      ports:
-          - $POSTGRES_PORT:$POSTGRES_PORT
-      environment:
-          POSTGRES_PASSWORD: password
-    app:
-      depends_on: 
-        - postgresql
-      container_name: project
-      image: voporak5/se452-group-6
-      env_file: ./.env
-      ports:
-          - "$SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT"    
-      environment:
-        SPRING_APPLICATION_JSON: '{
-            "spring.datasource.url"  : "jdbc:postgresql://postgresql:$POSTGRES_PORT/$SQL_DB",
-            "spring.datasource.username" : "$SQL_USER",
-            "spring.datasource.password" : "$SQL_PASSWORD",
-            "spring.jpa.hibernate.ddl-auto" : "update"
-          }'         
+  postgresql:
+    container_name: demo-postgres
+    image: postgres
+    env_file: ./.env
+    volumes:
+      - "$POSTGRES_EXTERNAL_LOC:/var/lib/postgresql/data"
+    restart: always
+    ports:
+      - $POSTGRES_PORT:$POSTGRES_PORT
+    environment:
+      POSTGRES_PASSWORD: password
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.4
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=true
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+    ports:
+      - "9200:9200"
+    networks:
+      - elastic
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.4
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=elastic
+      - ELASTICSEARCH_PASSWORD=${ELASTIC_PASSWORD}
+    ports:
+      - "5601:5601"
+    networks:
+      - elastic
+    depends_on:
+      - elasticsearch
+
+  app:
+    depends_on:
+      - postgresql
+    container_name: project
+    image: voporak5/se452-group-6
+    env_file: ./.env
+    ports:
+      - "$SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT"
+    environment:
+      SPRING_APPLICATION_JSON: '{
+        "spring.datasource.url" : "jdbc:postgresql://postgresql:$POSTGRES_PORT/$SQL_DB",
+        "spring.datasource.username" : "$SQL_USER",
+        "spring.datasource.password" : "$SQL_PASSWORD",
+        "spring.jpa.hibernate.ddl-auto" : "update",
+        "elasticsearch.host" : "elasticsearch",
+        "elasticsearch.port" : "9200",
+        "elasticsearch.scheme" : "http"
+      }'
+
+networks:
+  elastic:
+    driver: bridge
