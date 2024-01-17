@@ -43,21 +43,21 @@ Our schedules are listed on [When2Meet](https://www.when2meet.com/?19400023-628g
 | 3 | 5/11/23 | Review Docker Stuff to get it working
 
 ## About The Project
-Start the services using Docker Compose:
+Start the services using Docker Compose:<br>
 
-docker-compose up -d
-This command will start all the services defined in the docker-compose.yml file, including PostgreSQL, Elasticsearch, Kibana, and the application itself.
+docker-compose up -d<br>
+This command will start all the services defined in the docker-compose.yml file, including PostgreSQL, Elasticsearch, Kibana, and the application itself.<br>
 
-# Accessing the Services
-App: https://localhost:8443    !!!you can use these users to login in((larry, divad)  (michael, divad)  (steven, divad))
-Elasticsearch: http://localhost:9200
-Kibana: http://localhost:5601
+## Accessing the Services
+App: https://localhost:8443    !!!you can use these users to login in((larry, divad)  (michael, divad)  (steven, divad))<br>
+Elasticsearch: http://localhost:9200<br>
+Kibana: http://localhost:5601<br>
 
-Application: Accessible on the port configured in the docker-compose.yml file.
+Application: Accessible on the port configured in the docker-compose.yml file.<br><br>
 
-Stopping the Services
-To stop and remove all the running services, you can use the following command:
-docker-compose down
+Stopping the Services<br>
+To stop and remove all the running services, you can use the following command:<br>
+docker-compose down<br>
 
 ## Apendix
 ![Milestone 1 Screenshot](/img/milestone-1.png?raw=true "Milestone 1")
