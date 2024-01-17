@@ -82,4 +82,10 @@ docker-compose down<br>
 ![delete operation involved Cascading relationship-returnPage](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/ea8c28b2-bc7e-47bd-a80b-dbc9ef599620)
 ![Leaderboard HTML Representation](/img/final-leaderboard-html.png?raw=true "Leaderboard HTML")
 
+![4fbd75a875f10f50e64682eebd54478](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/7e0fb351-5d1f-418f-9fe6-d8a7ceb77c65)
+![21979891875a437ae4e0e6cd4aab2f6](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/de27b335-5752-4abc-a6ed-341312495919)
+![1110291cfaec65ac99c0a60c446aef5](https://github.com/DePaul-SE-352-452-Group-6/Group-6-Project/assets/129224800/6a872f55-98d1-46e5-936d-6dfd9429d395)
+
+
+
 
